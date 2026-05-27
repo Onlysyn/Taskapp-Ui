@@ -9,25 +9,130 @@
 <body>
     <div class="navbar">
         <div class="container">
-            <a href="#"></a>Plan<span>wise</span>
+            <a class="logo" href="#">Remember<span>That</span></a>
+
             <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
-            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
 
             <nav>
-                <ul class="primarynav">
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
                     <li class="current"><a href="#">Home</a></li>
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Pricing</a></li>
                 </ul>
 
-
-                     <ul class="secnav">
-                        <li><a href="#">Contact</a></li>
-                        <li class="gopremium"><a href="#">Go premium</a></li>
-                    </ul>
-             </nav>
-          </div>
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Plan Smarter. Move Faster</p>
+                <h1>Task Management that never fails</h1>
+                
+             <div class="hero-cta">
+                <a href="#" class="primary-cta">Get Started</a>
+                <a href="#" class="watch-video-cts"><img src="images/watch.svg" alt="Watch Video"> Watch Video
+                </a>
+             </div>
+            </div>
+            <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+         </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <ul>
+                <li>Unlimited Task</li>
+                <li>Sms Task Reminders</li>
+                <li>Confetti Explosions Upon Task Completion</li>
+                <li>Social Media announcements</li>
+                <li>Real-time Collaboration</li>
+                <li>Tons of awesome features</li>
+            </ul>
+            <img src="images/holdingphoneman.JPG" alt="holding phone" class="holding-phone">
+    
+
+
+        </div>
+
+
+    </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.JPG" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Mal Mudi</cite>
+                </li>
+                <li>
+                    <img src="images/person2.JPG" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Sanusi Lamido Sanusi</cite>
+                </li>
+                <li>
+                    <img src="images/person3.JPG" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Maryam Abacha</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=zawiyar%20tukuntawa%20diga&amp;maptype=roadmap&amp;zoom=14"><a href="https://www.maps.ie/create-google-map/" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    
+
+
+
+           
+        
+
 
 
 
